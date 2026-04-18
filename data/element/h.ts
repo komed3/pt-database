@@ -52,7 +52,7 @@ export default ( {
       year: 1766,
       discoverer: [ 'Henry Cavendish' ],
       country: [ 'GB' ],
-      references: [ 'wiki:de:Wasserstoff' ]
+      references: [ 'wiki_de_wasserstoff' ]
     },
     media: {},
     weblinks: {}
