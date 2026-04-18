@@ -1,4 +1,4 @@
-import type { MiscReference } from '@pseinfo/database-schema/abstract/reference';
+import type { Reference } from '@pseinfo/database-schema/abstract/reference';
 import { ReferenceType } from '@pseinfo/database-schema/enum/util';
 
 export default ( {
@@ -9,4 +9,4 @@ export default ( {
   note: '[Online; Stand 18. April 2026]',
   title: 'Wasserstoff --- Wikipedia{,} die freie Enzyklopädie',
   year: '2026'
-} ) as const satisfies MiscReference;
+} ) as const satisfies Reference;

@@ -56,6 +56,16 @@ export default ( {
       conversion: {
         factor: 31557600
       }
+    },
+    't{P}': {
+      symbol: 't{P}',
+      name: 'Planck time',
+      system: MetricSystem.METRIC,
+      isBase: false,
+      prefixable: false,
+      conversion: {
+        factor: 5.391247e-44
+      }
     }
   }
 } ) as const satisfies Quantity< 'time' >;
