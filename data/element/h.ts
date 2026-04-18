@@ -22,12 +22,33 @@ export default ( {
     ]
   },
   descriptive: {
-    registry: {},
-    structure: {},
+    registry: {
+      cas: '12385-13-6',
+      cid: '783',
+      chemspider: '4515072',
+      chebi: 'CHEBI:18276',
+      chembl: 'CHEMBL4297766',
+      kegg: 'C00282',
+      echa: '100.014.187',
+      ec: '215-605-7',
+      rtecs: 'RTECSMW8900000',
+      unii: '7YNJ3PO35Z',
+      drugbank: 'DB15127',
+      wikidata: 'Q556'
+    },
+    structure: {
+      inChI: 'InChI=1S/H2/h1H',
+      inChIkey: 'UFHFLCQGNIYNRP-UHFFFAOYSA-N',
+      smiles: '[HH]',
+      iupacName: 'molecular hydrogen'
+    },
     names: {
       [ LangCode.LATIN ]: [ 'Hydrogenium' ],
       [ LangCode.ENGLISH ]: [ 'Hydrogen' ],
-      [ LangCode.GERMAN ]: [ 'Wasserstoff' ]
+      [ LangCode.GERMAN ]: [ 'Wasserstoff' ],
+      [ LangCode.FRENCH ]: [ 'Hydrogène' ],
+      [ LangCode.SPANISH ]: [ 'Hidrógeno' ],
+      [ LangCode.ITALIAN ]: [ 'Idrogeno' ]
     }
   }
 } ) as const satisfies ElementData;
