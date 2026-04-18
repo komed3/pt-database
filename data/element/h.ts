@@ -1,7 +1,7 @@
 import type { ElementData } from '@pseinfo/database-schema/entity/element';
 import { ElementBlock, ElementGroup, ElementProperty, ElementSet, PTColumn, PTPeriod } from '@pseinfo/database-schema/enum/element';
 import { Phase } from '@pseinfo/database-schema/enum/physics';
-import { LangCode } from '@pseinfo/database-schema/enum/util';
+import { ImageFormat, LangCode } from '@pseinfo/database-schema/enum/util';
 
 export default ( {
   classification: {
@@ -52,9 +52,25 @@ export default ( {
       year: 1766,
       discoverer: [ 'Henry Cavendish' ],
       country: [ 'GB' ],
-      references: [ 'wiki_de_wasserstoff' ]
+      references: [ 'dewiki_265555462' ]
     },
-    media: {},
-    weblinks: {}
+    media: {
+      images: [ {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Hydrogen_discharge_tube.jpg',
+        format: ImageFormat.JPG,
+        credits: '<a href="https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg">Alchemist-hp (Diskussion) (www.pse-mendelejew.de)</a>, FAL, via Wikimedia Commons',
+        license: 'FAL',
+        author: 'Alchemist-hp (www.pse-mendelejew.de)',
+        source: 'https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg',
+        width: 3000,
+        height: 1000
+      } ]
+    },
+    weblinks: {
+      wiki: {
+        [ LangCode.ENGLISH ]: 'Hydrogen',
+        [ LangCode.GERMAN ]: 'Wasserstoff'
+      }
+    }
   }
 } ) as const satisfies ElementData;
