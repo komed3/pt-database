@@ -37,10 +37,8 @@ export default ( {
       wikidata: 'Q556'
     },
     structure: {
-      inChI: 'InChI=1S/H2/h1H',
-      inChIkey: 'UFHFLCQGNIYNRP-UHFFFAOYSA-N',
-      smiles: '[HH]',
-      iupacName: 'molecular hydrogen'
+      smiles: '[H]',
+      iupacName: 'atomic hydrogen'
     },
     names: {
       [ LangCode.LATIN ]: [ 'Hydrogenium' ],
@@ -49,6 +47,14 @@ export default ( {
       [ LangCode.FRENCH ]: [ 'Hydrogène' ],
       [ LangCode.SPANISH ]: [ 'Hidrógeno' ],
       [ LangCode.ITALIAN ]: [ 'Idrogeno' ]
-    }
+    },
+    discovery: {
+      year: 1766,
+      discoverer: [ 'Henry Cavendish' ],
+      country: [ 'GB' ],
+      references: [ 'wiki:de:Wasserstoff' ]
+    },
+    media: {},
+    weblinks: {}
   }
 } ) as const satisfies ElementData;
