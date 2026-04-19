@@ -4,6 +4,6 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@pseinfo/database-schema": "^0.6.4"
+    "@pseinfo/database-schema": "^0.6.5"
   }
 }

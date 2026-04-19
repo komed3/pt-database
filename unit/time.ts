@@ -2,8 +2,8 @@ import type { UnitFactory } from '@pseinfo/database-schema/abstract/unit';
 import { MetricSystem } from '@pseinfo/database-schema/enum/util';
 
 export default ( {
+  type: 'unit',
   quantity: 'time',
-  path: 'unit/time',
   data: {
     dimension: {
       symbol: 'T',

@@ -2,8 +2,8 @@ import type { ReferenceFactory } from '@pseinfo/database-schema/abstract/referen
 import { ReferenceType } from '@pseinfo/database-schema/enum/util';
 
 export default ( {
+  type: 'ref',
   refId: 'dewiki:265555462',
-  path: 'refs',
   data: {
     type: ReferenceType.MISC,
     accessed: '2026-04-18T16:13:00.000Z',

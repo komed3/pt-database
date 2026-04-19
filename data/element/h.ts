@@ -1,11 +1,11 @@
 import type { ElementFactory } from '@pseinfo/database-schema/entity/element';
 import { ElementBlock, ElementGroup, ElementProperty, ElementSet, ElementSymbol, PTColumn, PTPeriod } from '@pseinfo/database-schema/enum/element';
 import { Phase } from '@pseinfo/database-schema/enum/physics';
-import { ImageFormat, LangCode } from '@pseinfo/database-schema/enum/util';
+import { EntityType, ImageFormat, LangCode } from '@pseinfo/database-schema/enum/util';
 
 export default ( {
-  symbol: ElementSymbol.H,
-  path: 'data/element',
+  type: EntityType.ELEMENT,
+  element: ElementSymbol.H,
   data: {
     classification: {
       symbol: 'H',
@@ -52,7 +52,7 @@ export default ( {
         [ LangCode.ITALIAN ]: [ 'Idrogeno' ]
       },
       discovery: {
-        year: 1766,
+        year: '1766',
         discoverer: [ 'Henry Cavendish' ],
         country: [ 'GB' ],
         references: [ 'dewiki:265555462' ]
