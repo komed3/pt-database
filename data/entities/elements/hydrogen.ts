@@ -3,6 +3,8 @@ import { ElementBlock, ElementGroup, ElementProperty, ElementSet, ElementSymbol,
 import { Phase } from '@pseinfo/database-schema/enum/physics';
 import { EntityType, ImageFormat, LangCode } from '@pseinfo/database-schema/enum/util';
 
+import dewiki_265555462 from '../../references/dewiki_265555462';
+
 export default ( {
   type: EntityType.ELEMENT,
   element: ElementSymbol.H,
@@ -53,18 +55,20 @@ export default ( {
       },
       discovery: {
         year: '1766',
-        discoverer: [ 'Henry Cavendish' ],
-        country: [ 'GB' ],
-        references: [ 'dewiki:265555462' ]
+        discoverer: 'Cavendish, Henry',
+        country: 'GB',
+        references: [ dewiki_265555462.refId ]
       },
       media: {
         images: [ {
           url: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Hydrogen_discharge_tube.jpg',
           format: ImageFormat.JPG,
-          credits: '<a href="https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg">Alchemist-hp (Diskussion) (www.pse-mendelejew.de)</a>, FAL, via Wikimedia Commons',
-          license: 'FAL',
-          author: 'Alchemist-hp (www.pse-mendelejew.de)',
-          source: 'https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg',
+          attribution: {
+            credits: '<a href="https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg">Alchemist-hp (Diskussion) (www.pse-mendelejew.de)</a>, FAL, via Wikimedia Commons',
+            license: 'FAL',
+            author: 'Alchemist-hp (www.pse-mendelejew.de)',
+            source: 'https://commons.wikimedia.org/wiki/File:Hydrogen_discharge_tube.jpg'
+          },
           width: 3000,
           height: 1000
         } ]
